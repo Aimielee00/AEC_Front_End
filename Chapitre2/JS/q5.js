@@ -5,7 +5,7 @@ var degre;
 
 degre=Number(prompt("Veuillez inscrire un degre de temperature."));
 
-if(-40 < degre < -10){
+if(degre<=-40  && degre=<-10){
     document.write("HAAAAAAAAAAA! Il fait froid.");
 }
 
