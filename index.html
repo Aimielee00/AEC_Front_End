@@ -1,0 +1,185 @@
+
+<!-- Fait par Emilie Fortier-Marcoux
+Examen Final - Programmation web 1
+4 Avril 2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+<div class="container-fluid d-print-none">
+    <div class="row">
+        <div class="col-12">
+            <h5>Etape 1</h5>
+        </div>
+    </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h5>Entrez votre mot</h5>
+            </div>
+        </div>
+
+    <!-- input et bouton-->
+        <div class="row">
+            <div class="col-8">
+                <div class="form-group">
+                <small id="userHelp" class="form-text"></small>
+                <input class="form-control text-center" id="inputmot" type="text" placeholder="Ecrire un mot de 3 a 12 caracteres">
+                </div>
+            </div>
+                <div class="col-3">
+                <input type="submit" class="bg-dark card text-white py-2 px-2" id="OkGo" name="Go" value="Go">
+            </div>
+        </div>
+
+    <div class="row">
+        <div class="col-12">
+            <h5>    Utilisez * pour les caractères spéciaux </h5>
+        </div>
+    </div>
+</div>
+
+
+<!-- Mot de base-->
+<section = "impression d-print-block">
+<div class="container-fluid align-items-center bg-img " id="bg-img">
+    <div class="row row-mot pt-5 pb-5 bg-img align-items-center">
+        <div class="col-1 colonnelettre1" >
+            <img src="Letters/J/J1.jpg" class ="img-fluid img-lettre" id="lettre0">
+        </div>
+        <div class="col-1 colonnelettre2">
+            <img src="Letters/A/A1.jpg" class ="img-fluid img-lettre" id="lettre1">
+        </div>
+        <div class="col-1 colonnelettre3">
+            <img src="Letters/V/V1.jpg" class ="img-fluid img-lettre" id="lettre2">
+        </div>
+        <div class="col-1 colonnelettre4">
+            <img src="Letters/A/A1.jpg" class ="img-fluid img-lettre" id="lettre3">
+        </div>
+        <div class="col-1 colonnelettre5">
+            <img src="Letters/S/S1.jpg" class ="img-fluid img-lettre" id="lettre4">
+        </div>
+        <div class="col-1 colonnelettre6">
+            <img src="Letters/C/C1.jpg" class ="img-fluid img-lettre" id="lettre5">
+        </div>
+        <div class="col-1 colonnelettre7">
+            <img src="Letters/R/R1.jpg" class ="img-fluid img-lettre" id="lettre6">
+        </div>
+        <div class="col-1 colonnelettre8">
+            <img src="Letters/I/I1.jpg" class ="img-fluid img-lettre" id="lettre7">
+        </div>
+        <div class="col-1 colonnelettre9">
+            <img src="Letters/P/P1.jpg" class ="img-fluid img-lettre" id="lettre8">
+        </div>
+        <div class="col-1 colonnelettre10" >
+            <img src="Letters/T/T1.jpg" class ="img-fluid img-lettre" id="lettre9">
+        </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Backgrounds -->
+<div class ="container-fluid d-print-none">
+    <h5>Choisir un fond</h5>
+    <div class ="row">
+        <div class = "col-12" id ="bg">
+            <img src="background/gris.jpg" class ="bg" id="bggris">
+            <img src="background/noir.jpg" class ="bg" id="bgnoir">
+        <img src="background/rose.jpg" class ="bg" id="bgrose">
+        <img src="background/rouge.jpg" class ="bg" id="bgrouge">
+            <img src="background/bleuFonce.jpg" class ="bg" id="bgbleuFonce">
+            <img src="background/blanc.jpg" class ="bg" id="bgblanc">
+            <img src="background/bleu.jpg" class="bg" id ="bgbleu">
+        </div>
+    </div>
+</div>
+
+
+
+    <!--Caroussel dans un modal, caché avec Jquery-->
+<div class="modal fade d-print-none" id="Mymodal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <!--Header-->
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">
+                </h4>
+            </div>
+            <!--CARROUSSEL-->
+            <div class="modal-body">
+
+
+                <!--Carousel-->
+                <div id="myCarousel" class="carousel slide d-lg-block d-none" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row slide1">
+                                <div class="col-4"><img class="img-fluid imgcaroussel" id="idimgcar1" src="Letters/A/A1.jpg" ">
+                            </div>
+                                <div class="col-4"><img class="img-fluid imgcaroussel" id="idimgcar2" src="Letters/A/A2.jpg" ">
+                                </div>
+                                <div class="col-4"><img class="img-fluid imgcaroussel" id="idimgcar3" src="Letters/A/A3.jpg" >
+                                </div>
+                            </div>
+                        </div>
+                            <div class="carousel-item">
+                                <div class="row slide2 align-items-center">
+                                    <div class="col-4"><img class="img-fluid imgcaroussel" id="idimgcar4" src="Letters/A/A4.jpg"" ">
+                                    </div>
+                                    <div class="col-4"><img class="img-fluid imgcaroussel" id="idimgcar5" src="Letters/A/A5.jpg" ">
+                                    </div>
+
+                                </div>
+                            </div>
+                    </div>
+
+                    <a class="carousel-control-prev bg-dark" href="#myCarousel" data-slide="prev">
+                        <span class="carousel-control-prev-icon "></span>
+                    </a>
+                    <a class="carousel-control-next bg-dark" href="#myCarousel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+
+
+            <!--Footer-->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Sauvegarder</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
